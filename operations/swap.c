@@ -6,12 +6,12 @@
 /*   By: yderbas <yderbas@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 15:17:10 by yderbas           #+#    #+#             */
-/*   Updated: 2026/11/04 17:11:33 by yderbas          ###   ########.fr       */
+/*   Updated: 2026/11/07 13:43:07 by yderbas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
-int	swap_stack(t_stack **stack)
+static int	swap_stack(t_stack **stack)
 {
 	t_stack	*first;
 	t_stack	*sec;

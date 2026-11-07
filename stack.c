@@ -6,7 +6,7 @@
 /*   By: yderbas <yderbas@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 14:15:10 by yderbas           #+#    #+#             */
-/*   Updated: 2026/11/05 12:30:02 by yderbas          ###   ########.fr       */
+/*   Updated: 2026/11/07 12:45:21 by yderbas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -19,6 +19,7 @@ t_stack	*new_node(int value)
 	if (!new)
 		return (NULL);
 	new -> value = value;
+	new -> index = 0;
 	new -> next = NULL;
 	return (new);
 }
@@ -57,7 +58,7 @@ void	free_stack(t_stack **stc)
 	while (*stc)
 	{
 		temp = *stc;
-		*stc = *stc -> next;
+		*stc = (*stc) -> next;
 		free (temp);
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: yderbas <yderbas@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 09:45:16 by yderbas           #+#    #+#             */
-/*   Updated: 2026/11/07 11:54:40 by yderbas          ###   ########.fr       */
+/*   Updated: 2026/11/07 12:58:21 by yderbas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -48,7 +48,7 @@ int	parse_args(int argc, char **argv)
 		return (1);
 	if (check_errors(stack))
 	{
-		free_stack(stack);
+		free_stack(&stack);
 		return (1);
 	}
 	return (0);

@@ -6,19 +6,19 @@
 /*   By: yderbas <yderbas@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:37:38 by yderbas           #+#    #+#             */
-/*   Updated: 2026/11/04 17:16:30 by yderbas          ###   ########.fr       */
+/*   Updated: 2026/11/07 13:42:51 by yderbas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
-int	push_stack(t_stack **src, t_stack **dest)
+static int	push_stack(t_stack **src, t_stack **dest)
 {
 	t_stack	*temp;
 
 	if (!src || !*src)
 		return (0);
 	temp = *src;
-	*src = *src -> next;
+	*src = (*src) -> next;
 	temp -> next = *dest;
 	*dest = temp;
 	return (1);

@@ -6,7 +6,7 @@
 /*   By: yderbas <yderbas@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 10:40:44 by yderbas           #+#    #+#             */
-/*   Updated: 2026/11/05 12:14:55 by yderbas          ###   ########.fr       */
+/*   Updated: 2026/11/07 13:52:53 by yderbas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -43,7 +43,7 @@ int	parse_num(char *str, int *result)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		number = number * 10 + (str[i] - '0');
-		if (number > 2147483647 + (sign == -1))
+		if (number > 2147483647L + (sign == -1))
 			return (0);
 		i++;
 	}

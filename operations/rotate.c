@@ -20,7 +20,7 @@ static int	rotate_stack(t_stack **stack)
 	if (!stack || !*stack || !(*stack)->next)
 		return (0);
 	first = *stack;
-	*stack = b(*stack)->next;
+	*stack = (*stack)->next;
 	last = *stack;
 	while (last->next != NULL)
 	{

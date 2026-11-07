@@ -6,7 +6,7 @@
 /*   By: yderbas <yderbas@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 12:37:15 by yderbas           #+#    #+#             */
-/*   Updated: 2026/11/07 13:43:54 by yderbas          ###   ########.fr       */
+/*   Updated: 2026/11/07 14:02:45 by yderbas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef PUSH_SWAP_H
@@ -38,4 +38,7 @@ int     check_errors(t_stack *stack);
 void	ra(t_stack **stc_a);
 void	rb(t_stack **stc_b);
 void	rr(t_stack **stc_a, t_stack **stc_b);
+void	rra(t_stack **stc_a);
+void	rrb(t_stack **stc_b);
+void	rrr(t_stack **stc_a, t_stack **stc_b);
 #endif

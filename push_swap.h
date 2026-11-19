@@ -6,7 +6,7 @@
 /*   By: yderbas <yderbas@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 12:37:15 by yderbas           #+#    #+#             */
-/*   Updated: 2026/11/07 14:02:45 by yderbas          ###   ########.fr       */
+/*   Updated: 2026/11/19 11:20:49 by yderbas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef PUSH_SWAP_H
@@ -21,7 +21,16 @@ typedef struct s_stack
 	int 	index;
         struct s_stack *next;
 }       t_stack;
-
+typedef struct s_push_swap
+{
+	t_stack	*a;
+	t_stack	*b;
+	int		size;
+	double	disorder;
+	int		bench;
+	int		strategy;
+	int		count[11];
+}	t_push_swap;
 
 t_stack  *new_node(int value);
 t_stack  *create_stack(int *numbers, int size);
@@ -41,4 +50,6 @@ void	rr(t_stack **stc_a, t_stack **stc_b);
 void	rra(t_stack **stc_a);
 void	rrb(t_stack **stc_b);
 void	rrr(t_stack **stc_a, t_stack **stc_b);
+double	compute_disorder(t_stack *stack);
+void	index_stack(t_stack *stack);
 #endif

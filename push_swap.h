@@ -6,7 +6,7 @@
 /*   By: yderbas <yderbas@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 12:37:15 by yderbas           #+#    #+#             */
-/*   Updated: 2026/11/19 11:20:49 by yderbas          ###   ########.fr       */
+/*   Updated: 2026/11/21 15:09:38 by yderbas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef PUSH_SWAP_H
@@ -52,4 +52,6 @@ void	rrb(t_stack **stc_b);
 void	rrr(t_stack **stc_a, t_stack **stc_b);
 double	compute_disorder(t_stack *stack);
 void	index_stack(t_stack *stack);
+void	simple_sort(t_stack **stack_a, t_stack **stack_b);
+int    stack_size(t_stack *stack);
 #endif
